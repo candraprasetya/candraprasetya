@@ -1,16 +1,22 @@
-### Hi there 👋
 
-<!--
-**candraprasetya/candraprasetya** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# I'm an extremely passionate Flutter Developer
 
-Here are some ideas to get you started:
+## About Me
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+* 📱 Flutter Developer / Freelancer
+
+* ✨ UI / UX Enthusiast
+
+* 📖 Open Source Contributor
+
+* 💻 One line of code at a time
+
+* ♥️ Exploring new places
+
+* 💁🏻I share my Insights, Tricks, and Tips on Flutter development on my Instagram.
+
+
+
+## Reach me via
+
+[![Instagram](https://www.kardusinfo.com/wp-content/uploads/2020/07/icon_insta.png)](https://www.instagram.com/candraramesthy/) [![Linkedin](https://www.kardusinfo.com/wp-content/uploads/2020/07/icon_linkedin.png)](https://www.linkedin.com/in/candraprasetya/)
