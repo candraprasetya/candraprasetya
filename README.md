@@ -11,6 +11,8 @@
 
 * 💻 One line of code at a time
 
+* Mantab can, sangar lek
+
 * ♥️ Exploring new places
 
 * 💁🏻I share my Insights, Tricks, and Tips on Flutter development on my Instagram.
