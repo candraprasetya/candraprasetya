@@ -1,22 +1,7 @@
-
-# I'm an extremely passionate Flutter Developer
-
-## About Me
-
-* 📱 Flutter Developer / Freelancer
-
-* ✨ UI / UX Enthusiast
-
-* 📖 Open Source Contributor
-
-* 💻 One line of code at a time
-
-* ♥️ Exploring new places
-
-* 💁🏻I share my Insights, Tricks, and Tips on Flutter development on my Instagram.
-
-
-
-## Reach me via
-
-[![Instagram](https://www.kardusinfo.com/wp-content/uploads/2020/07/icon_insta.png)](https://www.instagram.com/candraramesthy/) [![Linkedin](https://www.kardusinfo.com/wp-content/uploads/2020/07/icon_linkedin.png)](https://www.linkedin.com/in/candraprasetya/)
+<a href="https://github.com/anuraghazra/github-readme-stats">
+  <img align="center" width="360" src="https://github-readme-stats.vercel.app/api?username=candraprasetya&hide_border=true&show_icons=true&theme=radical" />
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/anuraghazra/github-readme-stats">
+  <img align="center" width="320" height="141.81" src="https://github-readme-stats.vercel.app/api/top-langs/?username=candraprasetya&layout=compact&hide_border=true&show_icons=true&theme=radical" />
+</a>
