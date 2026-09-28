@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Expertise card</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --card: #ffffff;
+    --border: #e2e8f0;
+    --title: #0f172a;
+    --label: #0f172a;
+    --chip: #f1f5f9;
+    --icon: #0f766e;
+    --chip-primary: #0f766e;
+    --icon-primary: #ffffff;
+    --page: #f8fafc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --card: #0f172a;
+      --border: #1e293b;
+      --title: #f1f5f9;
+      --label: #e2e8f0;
+      --chip: #1e293b;
+      --icon: #2dd4bf;
+      --chip-primary: #2dd4bf;
+      --icon-primary: #0f172a;
+      --page: #020617;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;
+    padding: 32px 16px;
+    background: var(--page);
+    font-family: 'Google Sans', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .card {
+    width: min(360px, 100%);
+    padding: 24px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    margin: 0;
+  }
+  .card__title {
+    /* 41px puts the first row at y=88, the same grid start expertise-*.svg uses */
+    margin: 0 0 41px;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--title);
+  }
+  .card__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 16px;
+  }
+  .card__list li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .chip {
+    flex: 0 0 36px;
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--chip);
+    color: var(--icon);
+  }
+  .chip--primary {
+    background: var(--chip-primary);
+    color: var(--icon-primary);
+  }
+  .chip svg { width: 20px; height: 20px; display: block; }
+  .label { font-size: 15px; font-weight: 600; color: var(--label); }
+</style>
+</head>
+<body>
+
+      <div class="card">
+        <p class="card__title">Expertise</p>
+        <ul class="card__list">
+          <li>
+            <span class="chip chip--primary"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.125 5.75H12M12.25 5.75C12.25 5.88807 12.1381 6 12 6C11.8619 6 11.75 5.88807 11.75 5.75C11.75 5.61193 11.8619 5.5 12 5.5C12.1381 5.5 12.25 5.61193 12.25 5.75Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 9V19M9 9V19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 9V19M19 9V19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M21.3518 9H2.64822C2.29022 9 2 8.70651 2 8.34447C2 8.12259 2.11099 7.91577 2.29495 7.79485L8.73007 3.56485C10.3171 2.52162 11.1107 2 12 2C12.8893 2 13.6829 2.52162 15.2699 3.56485L21.7051 7.79485C21.889 7.91577 22 8.12259 22 8.34447C22 8.70651 21.7098 9 21.3518 9Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M21.0397 20.2929L20.3519 19.5858C20.0707 19.2968 19.9301 19.1522 19.7514 19.0761C19.5726 19 19.3738 19 18.9762 19H5.02382C4.62621 19 4.4274 19 4.24863 19.0761C4.06987 19.1522 3.92929 19.2968 3.64814 19.5858L2.9603 20.2929C2.25356 21.0194 1.9002 21.3827 2.02456 21.6913C2.14893 22 2.64867 22 3.64814 22H20.3519C21.3513 22 21.8511 22 21.9754 21.6913C22.0998 21.3827 21.7464 21.0194 21.0397 20.2929Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="label">Banking Platform</span>
+          </li>
+          <li>
+            <span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5352 11.0865L18.5575 12.6605C20.8775 13.5683 22.0375 14.0222 21.9991 14.7422C21.9606 15.4622 20.75 15.7924 18.3288 16.4527C17.6079 16.6493 17.2475 16.7476 16.9976 16.9976C16.7476 17.2475 16.6493 17.6079 16.4527 18.3288C15.7924 20.75 15.4622 21.9606 14.7422 21.9991C14.0222 22.0375 13.5683 20.8775 12.6605 18.5575L11.0865 14.5352C10.136 12.1062 9.6608 10.8918 10.2763 10.2763C10.8918 9.6608 12.1062 10.136 14.5352 11.0865Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.8576 7.08329C11.0714 7.43808 11.5323 7.55239 11.8871 7.33861C12.2419 7.12483 12.3562 6.66392 12.1424 6.30913L10.8576 7.08329ZM6.30914 12.1424C6.66392 12.3562 7.12483 12.2419 7.33861 11.8871C7.55239 11.5323 7.43808 11.0714 7.08329 10.8576L6.30914 12.1424ZM5.75 8.5C5.75 6.98122 6.98123 5.75 8.5 5.75V4.25C6.15281 4.25 4.25 6.15279 4.25 8.5H5.75ZM8.5 5.75C9.49944 5.75 10.3752 6.28272 10.8576 7.08329L12.1424 6.30913C11.3999 5.07687 10.0469 4.25 8.5 4.25V5.75ZM7.08329 10.8576C6.28272 10.3752 5.75 9.49945 5.75 8.5H4.25C4.25 10.0469 5.07688 11.3999 6.30914 12.1424L7.08329 10.8576Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M14.2515 8.13498C14.2778 8.54836 14.6342 8.86216 15.0476 8.83587C15.461 8.80958 15.7748 8.45316 15.7485 8.03979L14.2515 8.13498ZM8.04118 15.7485C8.45457 15.7747 8.81093 15.4608 8.83714 15.0475C8.86335 14.6341 8.54948 14.2777 8.1361 14.2515L8.04118 15.7485ZM2.75 8.50661C2.75 5.32733 5.32736 2.75 8.50664 2.75V1.25C4.49895 1.25 1.25 4.49889 1.25 8.50661H2.75ZM8.50664 2.75C11.561 2.75 14.0604 5.12926 14.2515 8.13498L15.7485 8.03979C15.5074 4.24925 12.3576 1.25 8.50664 1.25V2.75ZM8.1361 14.2515C5.12986 14.0609 2.75 11.5614 2.75 8.50661H1.25C1.25 12.358 4.25002 15.5081 8.04118 15.7485L8.1361 14.2515Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="label">Intuitive UX</span>
+          </li>
+          <li>
+            <span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.19671 6.83999C9.33456 7.11818 9.59244 7.37605 10.1082 7.89181C10.6239 8.40756 10.8818 8.66544 11.16 8.80329C11.6893 9.06557 12.3107 9.06557 12.84 8.80329C13.1182 8.66544 13.3761 8.40756 13.8918 7.89181C14.4076 7.37605 14.6654 7.11818 14.8033 6.83999C15.0656 6.31071 15.0656 5.68929 14.8033 5.16001C14.6654 4.88182 14.4076 4.62395 13.8918 4.10819C13.3761 3.59244 13.1182 3.33456 12.84 3.19671C12.3107 2.93443 11.6893 2.93443 11.16 3.19671C10.8818 3.33456 10.6239 3.59244 10.1082 4.10819C9.59244 4.62395 9.33456 4.88182 9.19671 5.16001C8.93443 5.68929 8.93443 6.31071 9.19671 6.83999Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.19671 12.84C3.33456 13.1182 3.59244 13.3761 4.10819 13.8918C4.62395 14.4076 4.88182 14.6654 5.16001 14.8033C5.68929 15.0656 6.31071 15.0656 6.83999 14.8033C7.11818 14.6654 7.37605 14.4076 7.89181 13.8918C8.40756 13.3761 8.66544 13.1182 8.80329 12.84C9.06557 12.3107 9.06557 11.6893 8.80329 11.16C8.66544 10.8818 8.40756 10.6239 7.89181 10.1082C7.37605 9.59244 7.11818 9.33456 6.83999 9.19671C6.31071 8.93443 5.68929 8.93443 5.16001 9.19671C4.88182 9.33456 4.62395 9.59244 4.10819 10.1082C3.59244 10.6239 3.33456 10.8818 3.19671 11.16C2.93443 11.6893 2.93443 12.3107 3.19671 12.84Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M15.1967 12.84C15.3346 13.1182 15.5924 13.3761 16.1082 13.8918C16.6239 14.4076 16.8818 14.6654 17.16 14.8033C17.6893 15.0656 18.3107 15.0656 18.84 14.8033C19.1182 14.6654 19.3761 14.4076 19.8918 13.8918C20.4076 13.3761 20.6654 13.1182 20.8033 12.84C21.0656 12.3107 21.0656 11.6893 20.8033 11.16C20.6654 10.8818 20.4076 10.6239 19.8918 10.1082C19.3761 9.59244 19.1182 9.33456 18.84 9.19671C18.3107 8.93443 17.6893 8.93443 17.16 9.19671C16.8818 9.33456 16.6239 9.59244 16.1082 10.1082C15.5924 10.6239 15.3346 10.8818 15.1967 11.16C14.9344 11.6893 14.9344 12.3107 15.1967 12.84Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.19671 18.84C9.33456 19.1182 9.59244 19.3761 10.1082 19.8918C10.6239 20.4076 10.8818 20.6654 11.16 20.8033C11.6893 21.0656 12.3107 21.0656 12.84 20.8033C13.1182 20.6654 13.3761 20.4076 13.8918 19.8918C14.4076 19.3761 14.6654 19.1182 14.8033 18.84C15.0656 18.3107 15.0656 17.6893 14.8033 17.16C14.6654 16.8818 14.4076 16.6239 13.8918 16.1082C13.3761 15.5924 13.1182 15.3346 12.84 15.1967C12.3107 14.9344 11.6893 14.9344 11.16 15.1967C10.8818 15.3346 10.6239 15.5924 10.1082 16.1082C9.59244 16.6239 9.33456 16.8818 9.19671 17.16C8.93443 17.6893 8.93443 18.3107 9.19671 18.84Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="label">Design Systems</span>
+          </li>
+          <li>
+            <span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.64298 3.14559L6.93816 3.93362C4.31272 5.14719 3 5.75397 3 6.75C3 7.74603 4.31272 8.35281 6.93817 9.56638L8.64298 10.3544C10.2952 11.1181 11.1214 11.5 12 11.5C12.8786 11.5 13.7048 11.1181 15.357 10.3544L17.0618 9.56638C19.6873 8.35281 21 7.74603 21 6.75C21 5.75397 19.6873 5.14719 17.0618 3.93362L15.357 3.14559C13.7048 2.38186 12.8786 2 12 2C11.1214 2 10.2952 2.38186 8.64298 3.14559Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M20.788 11.0972C20.9293 11.2959 21 11.5031 21 11.7309C21 12.7127 19.6873 13.3109 17.0618 14.5072L15.357 15.284C13.7048 16.0368 12.8786 16.4133 12 16.4133C11.1214 16.4133 10.2952 16.0368 8.64298 15.284L6.93817 14.5072C4.31272 13.3109 3 12.7127 3 11.7309C3 11.5031 3.07067 11.2959 3.212 11.0972" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M20.3767 16.2661C20.7922 16.5971 21 16.927 21 17.3176C21 18.2995 19.6873 18.8976 17.0618 20.0939L15.357 20.8707C13.7048 21.6236 12.8786 22 12 22C11.1214 22 10.2952 21.6236 8.64298 20.8707L6.93817 20.0939C4.31272 18.8976 3 18.2995 3 17.3176C3 16.927 3.20778 16.5971 3.62334 16.2661" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="label">Clean Architecture</span>
+          </li>
+          <li>
+            <span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.9922 11.1833V8.28029C20.9922 6.64029 20.9922 5.82028 20.5881 5.28529C20.184 4.75029 19.2703 4.49056 17.4429 3.9711C16.1944 3.6162 15.0938 3.18863 14.2145 2.79829C13.0156 2.2661 12.4161 2 11.9922 2C11.5682 2 10.9688 2.2661 9.7699 2.79829C8.89057 3.18863 7.79002 3.61619 6.54152 3.9711C4.71411 4.49056 3.80041 4.75029 3.3963 5.28529C2.99219 5.82028 2.99219 6.64029 2.99219 8.28029V11.1833C2.99219 16.8085 8.05496 20.1835 10.5861 21.5194C11.1932 21.8398 11.4968 22 11.9922 22C12.4876 22 12.7911 21.8398 13.3982 21.5194C15.9294 20.1835 20.9922 16.8085 20.9922 11.1833Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.49219 11.8333C8.49219 11.8333 9.36719 11.8333 10.2422 13.5C10.2422 13.5 13.0216 9.33333 15.4922 8.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="label">Security</span>
+          </li>
+          <li>
+            <span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 2H10.5C8.14298 2 6.96447 2 6.23223 2.73223C5.5 3.46447 5.5 4.64298 5.5 7V17C5.5 19.357 5.5 20.5355 6.23223 21.2678C6.96447 22 8.14298 22 10.5 22H13.5C15.857 22 17.0355 22 17.7678 21.2678C18.5 20.5355 18.5 19.357 18.5 17V7C18.5 4.64298 18.5 3.46447 17.7678 2.73223C17.0355 2 15.857 2 13.5 2Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.125 19H12M12.25 19C12.25 19.1381 12.1381 19.25 12 19.25C11.8619 19.25 11.75 19.1381 11.75 19C11.75 18.8619 11.8619 18.75 12 18.75C12.1381 18.75 12.25 18.8619 12.25 19Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="label">iOS, Flutter, Android</span>
+          </li>
+        </ul>
+      </div>
+</body>
+</html>
